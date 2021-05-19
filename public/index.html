@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <title>Chat App</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="relative">
+    <div class="connctionStatus">Checking</div>
+    <!-- ----------------------------------------------- -->
+    <div class="message-box-wrapper">
+      <section class="message-box">
+        <!-- <div class="message user-message">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam quasi sequi iste
+          asperiores pariatur ex voluptatibus a optio vel suscipit quidem, numquam nemo dolore eaque
+          eum placeat nesciunt voluptas.
+        </div> -->
+        <!-- <div class="message recipient-message">Lorem ipsum dolor sit amet.</div> -->
+      </section>
+    </div>
+
+    <!-- ----------------------------------------------- -->
+
+    <form class="chat-form" autocomplete="off">
+      <div>
+        <input id="message" name="message" type="text" placeholder="message" />
+        <button id="sendMessage" type="submit">Send</button>
+      </div>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/chat.js"></script>
+  </body>
+</html>
